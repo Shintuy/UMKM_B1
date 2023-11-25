@@ -225,7 +225,7 @@ public class laporan extends javax.swing.JFrame {
         ResultSet res=statement.executeQuery("SELECT sum(tagihan) as total_Perbulan, "
                 + "MONTH(tanggal_transaksi) as Bulan_Ke, YEAR(tanggal_transaksi) "
                 + "as Tahun from transaksi where MONTH(tanggal_transaksi) >= 1 ";
-        ABCD
+        ABCDCDDD
         while(res.next())
         {
             tbl.addRow(new Object[]{
