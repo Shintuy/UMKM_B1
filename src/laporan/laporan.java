@@ -224,8 +224,8 @@ public class laporan extends javax.swing.JFrame {
         Statement statement=(Statement) config.configDB().createStatement();
         ResultSet res=statement.executeQuery("SELECT sum(tagihan) as total_Perbulan, "
                 + "MONTH(tanggal_transaksi) as Bulan_Ke, YEAR(tanggal_transaksi) "
-                + "as Tahun from transaksi where MONTH(tanggal_transaksi) >= 1 "
-                + "Group By MONTH(tanggal_transaksi);";
+                + "as Tahun from transaksi where MONTH(tanggal_transaksi) >= 1 ";
+        ABCD
         while(res.next())
         {
             tbl.addRow(new Object[]{
